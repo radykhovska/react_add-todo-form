@@ -7,8 +7,8 @@ import { Todo, TodosUser, TodoItem } from './types/todo';
 import { TodoList } from './components/TodoList';
 import { FormEvent, ChangeEvent, useState } from 'react';
 
-function getUser(todoId: number): TodosUser {
-  const currentUser = usersFromServer.find(user => user.id === todoId);
+function getUser(id: number): TodosUser {
+  const currentUser = usersFromServer.find(user => user.id === id);
 
   if (currentUser) {
     return currentUser;
